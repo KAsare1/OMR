@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-from tests.process_two import *
+from process_two import *
 
 def process_answers(binary_image, answer_key, fill_threshold=1000):
     height, width = binary_image.shape
@@ -39,7 +39,7 @@ def process_answers(binary_image, answer_key, fill_threshold=1000):
     return detected_answers, score
 
 # Example usage
-image_path = 'objective_sample.jpg'
+image_path = 'images/answer_sheet_one.jpg'
 answer_key = {1: 'A', 2: 'B', 3: 'C', 4: 'D', 5: 'E', 
               6: 'A', 7: 'B', 8: 'C', 9: 'D', 10: 'E', 
               11: 'A', 12: 'B', 13: 'C', 14: 'D', 15: 'E', 

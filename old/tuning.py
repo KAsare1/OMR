@@ -83,7 +83,7 @@ def preprocess_image(image_path):
         return None
 
 # Example usage
-image_path = 'objective_sample.jpg'
+image_path = 'images/answer_sheet_one.jpg'
 processed_image = preprocess_image(image_path)
 
 # Display the processed image
